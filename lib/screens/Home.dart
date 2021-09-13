@@ -16,10 +16,44 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text(
           "joao.simonassi",
-          style: TextStyle(fontSize: 25, color: Colors.black),
+          style: TextStyle(
+              fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
         ),
+        centerTitle: false,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
+        actionsIconTheme: IconThemeData(color: Colors.black),
+      ),
+      endDrawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              title: const Text('Item 1'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Item 2'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
       ),
       body: Container(
         color: Colors.white,
@@ -31,8 +65,8 @@ class _HomeState extends State<Home> {
               Highlights(),
               Table(
                 border: TableBorder(
-                  horizontalInside: BorderSide(color: Colors.white,width: 2),
-                  verticalInside:  BorderSide(color: Colors.white,width: 2),
+                  horizontalInside: BorderSide(color: Colors.white, width: 2),
+                  verticalInside: BorderSide(color: Colors.white, width: 2),
                 ),
                 children: [
                   TableRow(children: <Widget>[

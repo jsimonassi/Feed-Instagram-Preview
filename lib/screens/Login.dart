@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_preview/constants/Colors.dart';
 import 'package:instagram_preview/constants/Messages.dart';
+import 'package:flutter_insta/flutter_insta.dart';
+
 
 import 'Home.dart';
 
@@ -16,12 +18,20 @@ class _LoginState extends State<Login> {
   bool _errorMenssagesIsVisible = false;
 
   @override
-  void initState() {
+  void initState(){
+    _getProfileInfo("joaosimonassi");
     // TODO: implement initState
     setState(() {
       _errorMenssagesIsVisible = false;
     });
     super.initState();
+
+  }
+
+  _getProfileInfo(String username) async {
+    FlutterInsta flutterInsta = new FlutterInsta();
+    await flutterInsta.getProfileData(username);
+    print(flutterInsta.bio);
   }
 
   bool validateInfos() {
