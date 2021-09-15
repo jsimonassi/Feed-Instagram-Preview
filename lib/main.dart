@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_preview/screens/Home.dart';
-import 'package:instagram_preview/screens/Login.dart';
+import 'package:instagram_preview/screens/Home/Home.dart';
+import 'package:instagram_preview/screens/Login/Login.dart';
 
 void main() {
   runApp(MyApp());

@@ -4,7 +4,7 @@ import 'package:instagram_preview/constants/Messages.dart';
 import 'package:flutter_insta/flutter_insta.dart';
 
 
-import 'Home.dart';
+import '../Home/Home.dart';
 
 class Login extends StatefulWidget {
   @override

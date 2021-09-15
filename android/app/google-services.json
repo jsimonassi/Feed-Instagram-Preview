@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478611182874",
+    "project_id": "feed-preview-debug",
+    "storage_bucket": "feed-preview-debug.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478611182874:android:6144a0c5a764a2afe288a3",
+        "android_client_info": {
+          "package_name": "com.simonassi.instagram_preview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478611182874-brtlqm1idh74b0rf4jgj1odsgktun574.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzr9H15Fw6AvU1SLynRT6GBPR-0PNWnCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478611182874-brtlqm1idh74b0rf4jgj1odsgktun574.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
